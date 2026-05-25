@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "source": "Tax Code § 116, as amended by RA 11534 (CREATE law). The 3% rate is the standing rule; a temporary 1% rate applied during 2020-07-01 → 2023-06-30 as a COVID-recovery measure.",
+    "source_url": "https://lawphil.net/statutes/repacts/ra2021/ra_11534_2021.html",
+    "verified_on": "2026-05-25",
+    "schema": {
+      "periods": "Each period applies for sales/receipts between its 'from' (inclusive) and 'to' (exclusive). The current/standing period has 'to': null."
+    },
+    "notes": [
+      "Applies to non-VAT-registered persons whose gross annual sales/receipts do not exceed ₱3,000,000.",
+      "Specific industries (e.g., banks, finance companies, common carriers, amusement, jai-alai) have their own §117-127 rates and are NOT covered by this table.",
+      "Pass `asOf` to the API to compute the rate that applied at a specific historical date."
+    ]
+  },
+  "periods": [
+    {
+      "rate": 0.01,
+      "from": "2020-07-01",
+      "to": "2023-07-01",
+      "legal_basis": "RA 11534 § 13 (CREATE law) — temporary reduction during COVID recovery",
+      "description": "1% temporary reduction"
+    },
+    {
+      "rate": 0.03,
+      "from": "2023-07-01",
+      "to": null,
+      "legal_basis": "Tax Code § 116, reverted per RA 11534 sunset clause",
+      "description": "3% standing rate"
+    }
+  ],
+  "applies_when": {
+    "vat_registered": false,
+    "annual_gross_at_or_below": 3000000
+  }
+}
