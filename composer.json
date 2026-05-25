@@ -1,0 +1,23 @@
+{
+  "name": "phdevutils/bir",
+  "description": "BIR (Bureau of Internal Revenue) tax utilities for the Philippines — VAT (12% / ₱3M threshold), percentage tax (3% standing, with historical 1% rate awareness), and a reference list of commonly-used BIR forms.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["philippines", "filipino", "bir", "tax", "vat", "percentage-tax", "withholding"],
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhDevUtils\\Bir\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PhDevUtils\\Bir\\Tests\\": "tests/"
+    }
+  }
+}
