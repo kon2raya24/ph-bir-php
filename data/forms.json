@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "source": "BIR — most commonly-referenced forms. Form numbers and titles are stable; status reflects EOPT (RA 11976, 2024) changes where applicable.",
+    "source_url": "https://www.bir.gov.ph/index.php/bir-forms.html",
+    "verified_on": "2026-05-25",
+    "schema": {
+      "number": "BIR form number",
+      "name": "Official form title",
+      "frequency": "monthly / quarterly / annual / event",
+      "purpose": "What the form is for (one-line)",
+      "status": "active / superseded — set when EOPT or other regulation removed the form"
+    },
+    "notes": [
+      "Not exhaustive — this v0.1 covers the most commonly referenced ~20 forms.",
+      "BIR Form 2550M (monthly VAT declaration) was removed by the EOPT Act (RA 11976, 2024); VAT filings are now quarterly only via 2550Q.",
+      "Form 0619-F was renumbered from 1602; both numbers may appear in older docs.",
+      "PRs welcome for additional forms — open one against this dataset."
+    ]
+  },
+  "forms": [
+    { "number": "0619-E", "name": "Monthly Remittance Form of Creditable Income Taxes Withheld (Expanded)", "frequency": "monthly", "purpose": "Remit expanded withholding tax for the first two months of each quarter", "status": "active" },
+    { "number": "0619-F", "name": "Monthly Remittance Form of Final Income Taxes Withheld", "frequency": "monthly", "purpose": "Remit final withholding tax for the first two months of each quarter", "status": "active" },
+    { "number": "1601-C", "name": "Monthly Remittance Return of Income Taxes Withheld on Compensation", "frequency": "monthly", "purpose": "Employer's monthly remittance of withholding tax on employee compensation", "status": "active" },
+    { "number": "1601-EQ", "name": "Quarterly Remittance Return of Creditable Income Taxes Withheld (Expanded)", "frequency": "quarterly", "purpose": "Employer's quarterly EWT return covering the prior quarter", "status": "active" },
+    { "number": "1601-FQ", "name": "Quarterly Remittance Return of Final Income Taxes Withheld", "frequency": "quarterly", "purpose": "Quarterly remittance of final withholding tax (e.g. dividends, royalties, interest)", "status": "active" },
+    { "number": "1604-C", "name": "Annual Information Return of Income Taxes Withheld on Compensation", "frequency": "annual", "purpose": "Year-end information return for employee withholding (paired with 2316 alphalist)", "status": "active" },
+    { "number": "1604-E", "name": "Annual Information Return of Creditable Income Taxes Withheld (Expanded)", "frequency": "annual", "purpose": "Year-end information return for EWT (paired with 2307 alphalist)", "status": "active" },
+    { "number": "1604-F", "name": "Annual Information Return of Income Payments Subjected to Final Withholding Taxes", "frequency": "annual", "purpose": "Year-end information return for final withholding tax", "status": "active" },
+    { "number": "1700", "name": "Annual Income Tax Return for Individuals Earning Purely Compensation Income", "frequency": "annual", "purpose": "Annual ITR for employees with only employment income (one employer, no other income)", "status": "active" },
+    { "number": "1701", "name": "Annual Income Tax Return for Self-Employed Individuals, Estates and Trusts", "frequency": "annual", "purpose": "Annual ITR for individuals with mixed income (employment + business/profession)", "status": "active" },
+    { "number": "1701A", "name": "Annual Income Tax Return for Individuals Earning Income Purely from Business/Profession", "frequency": "annual", "purpose": "Annual ITR for pure self-employed or professionals (no employment income)", "status": "active" },
+    { "number": "1701Q", "name": "Quarterly Income Tax Return for Self-Employed Individuals, Estates and Trusts", "frequency": "quarterly", "purpose": "Quarterly ITR for self-employed individuals (Q1, Q2, Q3)", "status": "active" },
+    { "number": "1702-RT", "name": "Annual Income Tax Return for Corporations, Partnerships and Other Non-Individual Taxpayers Subject Only to Regular Income Tax Rate", "frequency": "annual", "purpose": "Annual ITR for corporations under the regular rate only (no special/preferential rates)", "status": "active" },
+    { "number": "1702-EX", "name": "Annual Income Tax Return for Corporations Exempt under § 30 of the Tax Code or under a Special Law", "frequency": "annual", "purpose": "Annual ITR for exempt corporations (NGOs, GOCCs, etc.)", "status": "active" },
+    { "number": "1702-MX", "name": "Annual Income Tax Return for Corporations with Mixed Income Subject to Multiple Income Tax Rates", "frequency": "annual", "purpose": "Annual ITR for corporations with both regular and special/preferential rates (PEZA, BOI, etc.)", "status": "active" },
+    { "number": "1702Q", "name": "Quarterly Income Tax Return for Corporations, Partnerships and Other Non-Individual Taxpayers", "frequency": "quarterly", "purpose": "Quarterly ITR for corporations (Q1, Q2, Q3)", "status": "active" },
+    { "number": "2305", "name": "Certificate of Update of Exemption and of Employer's and Employee's Information", "frequency": "event", "purpose": "Update employer/employee info on change of status (marriage, birth, etc.)", "status": "active" },
+    { "number": "2316", "name": "Certificate of Compensation Payment / Tax Withheld for Compensation Payment With or Without Tax Withheld", "frequency": "annual", "purpose": "Year-end certificate employer issues to each employee documenting compensation + WT", "status": "active" },
+    { "number": "2550M", "name": "Monthly Value-Added Tax Declaration", "frequency": "monthly", "purpose": "Monthly VAT declaration (SUPERSEDED — see 2550Q)", "status": "superseded", "superseded_by": "2550Q", "superseded_on": "2024-01-22", "superseded_basis": "RA 11976 (EOPT Act) — monthly VAT filing requirement removed" },
+    { "number": "2550Q", "name": "Quarterly Value-Added Tax Return", "frequency": "quarterly", "purpose": "Quarterly VAT return (only required filing for VAT-registered taxpayers post-EOPT)", "status": "active" },
+    { "number": "2551Q", "name": "Quarterly Percentage Tax Return", "frequency": "quarterly", "purpose": "Quarterly percentage tax return for non-VAT-registered taxpayers (≤₱3M gross)", "status": "active" }
+  ]
+}
