@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "description": "Common creditable Expanded Withholding Tax (EWT) categories and rates under BIR RR 11-2018 (amending RR 2-98), TRAIN era.",
+    "source": "BIR Revenue Regulations No. 11-2018 (amending RR 2-98), implementing the TRAIN Law (RA 10963)",
+    "source_url": "https://www.bir.gov.ph/index.php/tax-information/withholding-tax.html",
+    "verified_on": "2026-06-03",
+    "schema": {
+      "categories": "Each category is either 'flat' (a single `rate`) or 'threshold' (`lowRate`/`highRate` chosen by the payee's annual gross vs `threshold`)."
+    },
+    "notes": [
+      "Creditable (expanded) withholding tax on income payments. These are the commonly-encountered categories — the full RR 2-98/11-2018 schedule has more.",
+      "The LOWER rate for professional/commission categories requires the payee to file a Sworn Declaration of gross income/receipts (Annex B-1 for individuals, B-3 for non-individuals) with a Certificate of Registration; otherwise the higher rate applies. For individuals the lower rate also requires the payee to be non-VAT-registered.",
+      "Top-Withholding-Agent (TWA) rates (1% on goods / 2% on services) apply ONLY to income payments made by businesses the BIR has designated as Top Withholding Agents.",
+      "ATC (Alphanumeric Tax Code) values for BIR form filing are intentionally NOT included — confirm the current ATC against BIR Form 0619-E / 1601-EQ.",
+      "Documentary Stamp Tax (DST) is intentionally NOT included pending verification of the 2025 CMEPA (RA 12214) rate revisions."
+    ]
+  },
+  "categories": [
+    {
+      "key": "professional_individual",
+      "label": "Professional / talent / management fees — individual",
+      "kind": "threshold",
+      "lowRate": 0.05,
+      "highRate": 0.10,
+      "threshold": 3000000,
+      "vatForcesHigh": true,
+      "thresholdBasis": "payee's annual gross income/receipts",
+      "note": "5% if the payee's annual gross is ₱3,000,000 or below, a sworn declaration is filed, and the payee is non-VAT-registered; otherwise 10%."
+    },
+    {
+      "key": "professional_corporate",
+      "label": "Professional fees — non-individual (corporation / partnership)",
+      "kind": "threshold",
+      "lowRate": 0.10,
+      "highRate": 0.15,
+      "threshold": 720000,
+      "vatForcesHigh": false,
+      "thresholdBasis": "payee's annual gross income/receipts",
+      "note": "10% if the payee's annual gross is ₱720,000 or below and a sworn statement is filed; otherwise 15%."
+    },
+    {
+      "key": "commission_individual",
+      "label": "Commissions / fees of agents & brokers — individual",
+      "kind": "threshold",
+      "lowRate": 0.05,
+      "highRate": 0.10,
+      "threshold": 3000000,
+      "vatForcesHigh": true,
+      "thresholdBasis": "payee's annual gross income/receipts",
+      "note": "Same rule as professional fees for individuals (5% / 10%)."
+    },
+    {
+      "key": "commission_corporate",
+      "label": "Commissions / fees of agents & brokers — non-individual",
+      "kind": "threshold",
+      "lowRate": 0.10,
+      "highRate": 0.15,
+      "threshold": 720000,
+      "vatForcesHigh": false,
+      "thresholdBasis": "payee's annual gross income/receipts",
+      "note": "Same rule as professional fees for non-individuals (10% / 15%)."
+    },
+    {
+      "key": "rental",
+      "label": "Rental / lease of real or personal property",
+      "kind": "flat",
+      "rate": 0.05,
+      "note": "5% of the gross rental/lease."
+    },
+    {
+      "key": "contractor",
+      "label": "Contractors & subcontractors (e.g. construction, janitorial, security, advertising)",
+      "kind": "flat",
+      "rate": 0.02,
+      "note": "2% of the gross payment."
+    },
+    {
+      "key": "goods_twa",
+      "label": "Purchase of goods by a Top Withholding Agent",
+      "kind": "flat",
+      "rate": 0.01,
+      "note": "1% — applies only to income payments by a BIR-designated Top Withholding Agent."
+    },
+    {
+      "key": "services_twa",
+      "label": "Purchase of services by a Top Withholding Agent",
+      "kind": "flat",
+      "rate": 0.02,
+      "note": "2% — applies only to income payments by a BIR-designated Top Withholding Agent."
+    }
+  ]
+}

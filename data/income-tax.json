@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "source": "NIRC § 24(A)(2), as amended by RA 10963 (TRAIN Law)",
+    "source_url": "https://www.dof.gov.ph/train-law-to-further-reduce-personal-income-taxes-in-2023-onwards/",
+    "verified_on": "2026-05-28",
+    "notes": [
+      "Graduated rates for individual taxpayers (compensation, business, and professional income).",
+      "Two schedules: TRAIN 2018–2022, and the lower 2023-onward rates. Looked up by asOf date.",
+      "Each bracket: tax = base + rate * (taxableIncome - over), for income above `over`.",
+      "First ₱250,000 of taxable income is exempt in both schedules.",
+      "8% option: self-employed/professionals with gross sales/receipts <= ₱3M (VAT threshold) may elect 8% on gross in excess of ₱250,000 (pure SEP), IN LIEU OF graduated income tax AND the 3% percentage tax. Mixed-income earners apply 8% to full gross (the ₱250k is used in the compensation computation)."
+    ]
+  },
+  "schedules": [
+    {
+      "from": "2018-01-01",
+      "to": "2023-01-01",
+      "legal_basis": "RA 10963 (TRAIN), 2018–2022 graduated rates",
+      "brackets": [
+        { "over": 0, "base": 0, "rate": 0 },
+        { "over": 250000, "base": 0, "rate": 0.20 },
+        { "over": 400000, "base": 30000, "rate": 0.25 },
+        { "over": 800000, "base": 130000, "rate": 0.30 },
+        { "over": 2000000, "base": 490000, "rate": 0.32 },
+        { "over": 8000000, "base": 2410000, "rate": 0.35 }
+      ]
+    },
+    {
+      "from": "2023-01-01",
+      "to": null,
+      "legal_basis": "RA 10963 (TRAIN), 2023-onward graduated rates",
+      "brackets": [
+        { "over": 0, "base": 0, "rate": 0 },
+        { "over": 250000, "base": 0, "rate": 0.15 },
+        { "over": 400000, "base": 22500, "rate": 0.20 },
+        { "over": 800000, "base": 102500, "rate": 0.25 },
+        { "over": 2000000, "base": 402500, "rate": 0.30 },
+        { "over": 8000000, "base": 2202500, "rate": 0.35 }
+      ]
+    }
+  ],
+  "eight_percent": {
+    "rate": 0.08,
+    "exemption": 250000,
+    "gross_cap": 3000000,
+    "legal_basis": "NIRC § 24(A)(2)(b), RA 10963 (TRAIN)"
+  }
+}
